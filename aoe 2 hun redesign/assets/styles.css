@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* background-color: #E7D9B9; */
+}
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #e7d9b9;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+.content {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 200px;
+  /* margin-bottom: 5000px; */
+
+}
+.content h1 {
+  font-size: 50px;
+  color: red;
+  font-weight: 600;
+}
+.content strong {
+  text-decoration: none;
+  display: inline;
+  color: red;
+  font-size: 35px;
+  margin-top: 50;
+}
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(9px);
+}
+.iconss  {
+  font-size: 4rem;
+  cursor: pointer;
+  color: #000;
+}
+@media (max-width: 800px) {
+  .iconss {
+    display: none;
+  }
+  .content {
+    padding-top: 50px;
+  }
+}
+.iconss a {
+  color: #e7d9b9;
+  padding-left:5px ;
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-twitch:hover {
+  color: purple;
+}
+.fa-youtube:hover {
+  color: red;
+}
+.fa-google-drive:hover {
+  color: green;
+}
+@media (min-aspect-ratio:16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+    
+  }
+}
+@media (max-aspect-ratio:16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+    
+  }
+}
+@media (max-width: 767px) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+section {
+  padding: 0 19%;
+}
+.content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+.ranglista {
+  background-color: #e7d9b9;
+  padding: 15rem 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
+}
+.ranglista-content {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
