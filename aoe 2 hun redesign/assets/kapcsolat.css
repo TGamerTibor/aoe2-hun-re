@@ -1,0 +1,110 @@
+element.style {
+  --brand-color: 	#1b2838;
+  --brand-color: #3b5998;
+  --brand-color: #5460e6;
+}
+
+
+
+
+
+
+.community-banner {
+  background-color: #E7D9B9;
+  background-position: center center;
+  background-size: cover;
+}
+.hero {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-body {
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 3rem 1.5rem;
+}
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+}
+.columns.is-multiline {
+  flex-wrap: wrap;
+}
+.columns.is-mobile {
+  display: flex;
+}
+.columns.is-centered {
+  justify-content: center;
+}
+.columns:last-child {
+  margin-bottom: -0.75rem;
+}
+.columns {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+  padding: 0.75rem;
+}
+#communityCols .column {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+.column.is-half-mobile {
+  flex: none;
+  width: 50%;
+}}
+#communityCols .logo {
+  display: block;
+  border-radius: 100%;
+  width: 150px!important;
+  background: rgba(0, 0, 0, 0.589)!important;
+  text-align: center;
+  line-height: 150px;
+  font-size: 300%;
+  min-width: 150px;
+  color: var(--brand-color);
+  filter: drop-shadow(0 0 5px rgba(0,0,0,.25));
+  transition: filter .25s;
+  position: relative;
+}
+#communityCols .logo:hover {
+  filter: drop-shadow(0 0 5px rgba(0,0,0,.5));
+}
+#communityCols .logo:after {
+  display: block;
+  content: " ";
+  background: 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  box-sizing: border-box;
+  transition: outline .25s,outline-offset .25s,box-shadow .25s;
+  outline-offset: 2.5rem;
+  z-index: 2
+}
+
+#communityCols .logo:hover:after {
+  outline: .25rem solid var(--brand-color);
+  outline-offset: 0;
+  box-shadow: 0 0 2.5rem var(--brand-color)
+}
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}

@@ -5,9 +5,15 @@
   font-family: 'Poppins', sans-serif;
   /* background-color: #E7D9B9; */
 }
+
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  background-color: #e7d9b9;
+}
+
 body::-webkit-scrollbar {
   width: 10px;
 }
@@ -20,6 +26,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: red;
 }
+
 .content {
   text-align: center;
   width: 100%;
@@ -28,11 +35,13 @@ body::-webkit-scrollbar-thumb {
   /* margin-bottom: 5000px; */
 
 }
+
 .content h1 {
   font-size: 50px;
   color: red;
   font-weight: 600;
 }
+
 .content strong {
   text-decoration: none;
   display: inline;
@@ -40,6 +49,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 35px;
   margin-top: 50;
 }
+
 .back-video {
   position: absolute;
   right: 0;
@@ -47,81 +57,139 @@ body::-webkit-scrollbar-thumb {
   z-index: -1;
   filter: blur(9px);
 }
-.iconss  {
+
+.iconss {
   font-size: 4rem;
   cursor: pointer;
   color: #000;
 }
+
 @media (max-width: 800px) {
   .iconss {
     display: none;
   }
+
   .content {
     padding-top: 50px;
   }
 }
+
 .iconss a {
   color: #e7d9b9;
-  padding-left:5px ;
+  padding-left: 5px;
 }
+
 .fa-facebook:hover {
   color: rgb(0, 110, 255);
 }
+
 .fa-twitch:hover {
   color: purple;
 }
+
 .fa-youtube:hover {
   color: red;
 }
+
 .fa-google-drive:hover {
   color: green;
 }
+
 @media (min-aspect-ratio:16/9) {
   .back-video {
     width: 100%;
     height: auto;
-    
+
   }
 }
+
 @media (max-aspect-ratio:16/9) {
   .back-video {
     width: auto;
     height: 100%;
-    
+
   }
 }
+
 @media (max-width: 767px) {
   .back-video {
     width: 100%;
     height: auto;
   }
+
   .back-video {
     width: auto;
     height: 100%;
   }
+  .outer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
 }
 
-section {
-  padding: 0 19%;
-}
-.content h2 {
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  margin-top: 20px;
-}
 .ranglista {
-  background-color: #e7d9b9;
-  padding: 15rem 0;
+  padding: 0 9%;
+  padding-bottom: 4rem;
 }
-.container {
-  margin: 0 auto;
-  max-width: 107rem;
-  padding: 0 4rem;
+
+.ranglista h1 {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 90px;
+  padding-bottom: 30px;
 }
-.ranglista-content {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
+.outer {
+  display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: center;
+
+}
+
+.wrapper th {
+  text-align: left;
+  
+}
+.wrapper2 {
+  margin-left: 5rem;
+  
+}
+table {
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+}
+
+table.leaderboardTable tr:nth-child(even) {
+  background: #ecd59f;
+}
+caption {
+  font-size: 19px;
+}
+.Cikkek {
+  padding: 0 9%;
+  padding-bottom: 4rem;
+}
+.Cikkek h1 {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+.wrapper-cikkek2 {
+  margin-left: 5rem;
+}
+.wrapper-cikkek2 .wrapper-cikkek {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+ul {
+  list-style: none;
+  
 }
